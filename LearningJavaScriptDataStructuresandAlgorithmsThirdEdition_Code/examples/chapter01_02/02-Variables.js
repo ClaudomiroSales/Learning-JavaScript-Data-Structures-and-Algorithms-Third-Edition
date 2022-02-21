@@ -31,8 +31,8 @@ function myOtherFunction() {
   return myOtherVariable;
 }
 
-console.log(myVariable); //{1}
-console.log(myFunction()); //{2}
-console.log(myOtherVariable); //{3}
-console.log(myOtherFunction()); //{4}
-console.log(myOtherVariable); //{5}
+console.log(myVariable); //{1}         -> global
+console.log(myFunction()); //{2}       -> local
+console.log(myOtherVariable); //{3}    -> global
+console.log(myOtherFunction()); //{4}  -> local
+console.log(myOtherVariable); //{5}    -> local
