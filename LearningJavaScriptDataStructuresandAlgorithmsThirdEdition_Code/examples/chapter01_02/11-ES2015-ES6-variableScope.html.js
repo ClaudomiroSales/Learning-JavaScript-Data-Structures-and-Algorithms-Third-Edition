@@ -11,9 +11,21 @@ function starWarsFan() {
 }
 
 function marvelFan() {
-  movie = 'The Avengers'; // {3}
+  movie = 'The Avengers'; // {3} Acessa a variável global
   return movie;
 }
+
+console.log(movie); // {8}
+console.log(starWarsFan()); // {9}
+console.log(marvelFan()); // {10}
+console.log(movie); // {11}
+
+// output
+///////////////////////////
+// Lord of the Rings -> console.log(movie);
+// Star Wars -> console.log(starWarsFan());
+// The Avengers -> console.log(marvelFan());
+// The Avengers -> console.log(movie);
 
 function blizzardFan() {
   const isFan = true;
@@ -28,19 +40,12 @@ function blizzardFan() {
   console.log('After if: ' + phrase);
 }
 
-console.log(movie); // {8}
-console.log(starWarsFan()); // {9}
-console.log(marvelFan()); // {10}
-console.log(movie); // {11}
 blizzardFan(); // {12}
-
 // output
-// Lord of the Rings
-// Star Wars
-// The Avengers
-// The Avengers
-// Before if: Warcraft
-// Inside if: For the Horde!
-// After if: For the Alliance!
+///////////////////////////
+//blizzardFan(); // {12}
+// Before if: Warcraft         -> console.log('Before if: ' + phrase);
+// Inside if: For the Horde!   -> console.log('Inside if: ' + phrase);
+// After if: For the Alliance! -> console.log('After if: ' + phrase);
 
 
