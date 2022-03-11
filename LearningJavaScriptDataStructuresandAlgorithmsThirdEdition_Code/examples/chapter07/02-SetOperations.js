@@ -14,7 +14,10 @@ setB.add(5);
 setB.add(6);
 
 const unionAB = setA.union(setB);
-console.log(unionAB.values()); // [1, 2, 3, 4, 5, 6]
+
+console.log('SetA  =', setA.values()); // [1, 2, 3]
+console.log('SetB  =', setB.values()); // [3, 4, 5, 6]
+console.log('Union =', unionAB.values()); // [1, 2, 3, 4, 5, 6]
 
 // --------- Intersection ----------
 
