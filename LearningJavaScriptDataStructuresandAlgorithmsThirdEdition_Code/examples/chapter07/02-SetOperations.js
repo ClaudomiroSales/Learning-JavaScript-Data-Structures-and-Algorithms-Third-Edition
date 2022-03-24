@@ -32,7 +32,9 @@ setB.add(3);
 setB.add(4);
 
 const intersectionAB = setA.intersection(setB);
-console.log(intersectionAB.values()); // [2, 3]
+console.log('SetA  =', setA.values()); // [1, 2, 3]
+console.log('SetB  =', setB.values()); // [2, 3, 4]
+console.log('IntersectionAB', intersectionAB.values()); // [2, 3]
 
 // --------- Difference ----------
 

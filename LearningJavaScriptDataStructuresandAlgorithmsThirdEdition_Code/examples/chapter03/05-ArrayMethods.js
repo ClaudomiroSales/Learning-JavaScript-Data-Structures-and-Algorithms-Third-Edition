@@ -44,4 +44,4 @@ console.log('numbers.filter(isEven)', numbers.filter(isEven));
   })
 ); */ // ES5 sintax for function below
 
-console.log('numbers.reduce', numbers.reduce((previous, current) => previous + current));
+//console.log('numbers.reduce', numbers.reduce((previous, current) => previous + current));

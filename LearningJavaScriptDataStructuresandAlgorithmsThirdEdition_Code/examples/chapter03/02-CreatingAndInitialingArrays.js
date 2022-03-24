@@ -1,6 +1,6 @@
 // @ts-check
 /* eslint-disable */
-
+/*
 let daysOfWeek = new Array(); // {1}
 
 daysOfWeek = new Array(7); // {2}
@@ -17,6 +17,7 @@ console.log('daysOfWeek.length', daysOfWeek.length);
 for (let i = 0; i < daysOfWeek.length; i++) {
   console.log(`daysOfWeek[${i}]`, daysOfWeek[i]);
 }
+*/
 
 // fibonacci numbers
 // 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, ...

@@ -1,15 +1,20 @@
 // @ts-check
 /* eslint-disable */
-
+/*
 function logArray(message = '', array) {
   const output = `${message} => (${array.length}) [${array.join(', ')}]`;
   document.writeln(`<p>${output}</p>`);
   console.log(message, array);
 }
+*/
 
 let numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-console.log('Original array', numbers);
+//logArray('Meu array', numbers);
+
+
+//console.log('Original array', numbers);
+
 
 function printArray(myArray) {
   for (let i = 0; i < myArray.length; i++) {
@@ -17,8 +22,10 @@ function printArray(myArray) {
   }
 }
 
-/****************************** Inserting an element in the end of the Array */
+//printArray(numbers);
 
+/****************************** Inserting an element in the end of the Array*/ 
+/*
 // add a new element to the numbers array
 numbers[numbers.length] = 10;
 console.log('Add 10 to the end', numbers);
@@ -40,7 +47,8 @@ Array.prototype.insertFirstPosition = function(value) {
 
 numbers.insertFirstPosition(-1);
 console.log('Add -1 with insertFirstPosition', numbers);
-// printArray(numbers);
+printArray(numbers);
+
 
 // using method unshift
 numbers.unshift(-2);
@@ -51,8 +59,10 @@ numbers.unshift(-4, -3);
 console.log('Add -4 and -3 with unshift', numbers);
 // printArray(numbers);
 
-// ************** Removing elements
 
+
+// ************** Removing elements
+console.log('Antes de remover', numbers);
 numbers.pop();
 console.log('Removed last value with pop', numbers);
 
@@ -62,9 +72,10 @@ for (let i = 0; i < numbers.length; i++) {
 
 console.log('Removed first value manually', numbers);
 console.log('Lenght after value removed manually', numbers.length);
-
+*/
 //reset array
 numbers = [-4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+console.log('Antes de remover', numbers);
 
 Array.prototype.reIndex = function(myArray) {
   const newArray = [];
@@ -95,11 +106,12 @@ console.log('Lenght after removed first with shift', numbers.length);
 
 //* *** Removing and Adding elements from the middle of the array or specific position
 // splice method - parameter (index, howManyPositionsToBeRemoved, item1...itemX)
+console.log('Antes de remover', numbers);
 numbers.splice(5, 3);
 console.log('Removing 3 elements (3, 4, 5) starting index 5', numbers);
 
 numbers.splice(5, 0, 2, 3, 4);
 console.log('Adding 3 elements (2, 3, 4) starting index 5', numbers);
 
-numbers.splice(5, 3, 2, 3, 4);
-console.log('Removing 3 elements starting index 5 and adding (2, 3, 4)', numbers);
+numbers.splice(5, 3, 2, 3, 4, 5);
+console.log('Removing 3 elements starting index 5 and adding (2, 3, 4, 5)', numbers);

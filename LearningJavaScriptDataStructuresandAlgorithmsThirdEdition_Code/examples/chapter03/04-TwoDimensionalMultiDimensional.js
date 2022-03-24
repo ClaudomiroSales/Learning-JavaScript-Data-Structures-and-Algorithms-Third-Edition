@@ -40,13 +40,13 @@ averageTemp[1][3] = 75;
 averageTemp[1][4] = 73;
 averageTemp[1][5] = 73;
 
-// printMatrix(averageTemp);
+printMatrix(averageTemp);
 console.table(averageTemp);
 
 //* * Multidimensional Matrix
 
 // Matrix 3x3x3 - Cube
-
+/*
 const matrix3x3x3 = [];
 for (let i = 0; i < 3; i++) {
   matrix3x3x3[i] = [];
@@ -76,3 +76,4 @@ for (let i = 0; i < 3; i++) {
 }
 console.log('matrix3x3x3 three-dimensional array:');
 console.table(matrix3x3x3Output);
+*/
