@@ -107,7 +107,7 @@ console.log('copyArray.copyWithin(1, 3, 5)', copyArray);
 console.log('methods find and findIndex');
 
 function multipleOf13(element) {
-  return element % 3 === 0;
+  return element % 13 === 0;
 }
 
 console.log('numbers.find(multipleOf13)', numbers.find(multipleOf13));
